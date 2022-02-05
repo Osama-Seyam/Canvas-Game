@@ -5,9 +5,9 @@ canvas.width = innerWidth;
 canvas.height = innerHeight;
 
 const scoreEl = document.getElementById('scoreEl')
-const noraml = document.getElementById('noraml')
+const easy = document.getElementById('easy')
+const normal = document.getElementById('normal')
 const hard = document.getElementById('hard')
-const veryHard = document.getElementById('veryHard')
 const start = document.getElementById('start')
 
 const restartGameBtn = document.getElementById('btn')
@@ -275,7 +275,7 @@ addEventListener('click', (event) => {
 
 let velocityRatio;
 
-noraml.addEventListener('click', () => {
+easy.addEventListener('click', () => {
     init()
     animate()
     spawnEnemies()
@@ -285,7 +285,7 @@ noraml.addEventListener('click', () => {
     start.style.display = 'none'
 })
 
-hard.addEventListener('click', () => {
+normal.addEventListener('click', () => {
     init()
     animate()
     spawnEnemies()
@@ -295,7 +295,7 @@ hard.addEventListener('click', () => {
     start.style.display = 'none'
 })
 
-veryHard.addEventListener('click', () => {
+hard.addEventListener('click', () => {
     init()
     animate()
     spawnEnemies()
