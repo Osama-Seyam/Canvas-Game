@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.display {
+    display: none !important;
+}
+
+#noraml,
+#hard,
+#veryHard {
+    margin: 3px;
+}
